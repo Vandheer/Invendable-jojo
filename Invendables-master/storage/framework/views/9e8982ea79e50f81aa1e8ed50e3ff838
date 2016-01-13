@@ -1,5 +1,0 @@
-<?php if($errors->has($name)): ?>
-<div class="col-sm-7 col-md-offset-3 col-xs-12 col-xs-offset-3">
-	<?php echo $__env->make('partials.notification', ['type' => 'danger', 'message' => $errors->first($name)], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-</div>
-<?php endif; ?>
