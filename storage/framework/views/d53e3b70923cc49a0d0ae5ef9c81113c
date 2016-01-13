@@ -1,0 +1,55 @@
+<?php $__env->startSection('title'); ?>
+Connexion
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('description'); ?>
+Accéder à votre compte en vous connectant ! Ou alors inscrivez-vous !
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('keywords'); ?>
+Se, connecter, connexion, gratuit, inscription
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('body'); ?>
+
+
+    <section class="container">
+    <div class="row">
+        <h1 class="head-title col-md-offset-3 col-md-7 col-sm-12 text-center"><?php echo e(trans('messages.connect_message')); ?></h1>
+        <?php echo Form::open(array("route" => "auth.login", "class" => "form-horizontal")); ?>
+
+            <div class="col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <?php echo $__env->make('partials.error_form', ['name' => 'email'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                    <label class="mandatory col-sm-3 control-label" for="email"><?php echo e(trans('form.email')); ?> * :</label>
+                    <div class="col-sm-7">
+                        <input class="form-control" type="text" name="email" id="email" placeholder="<?php echo e(trans('form.placeholder_messsage', array("field" => trans('form.email')))); ?>" maxlength="45" required="">
+                    </div>
+                </div>
+                <div class="form-group">                                    
+                    <?php echo $__env->make('partials.error_form', ['name' => 'password'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                    <label class="mandatory col-sm-3 control-label" for="name"><?php echo e(trans('form.password')); ?> * :</label>
+                    <div class="col-sm-7">
+                        <input class="form-control" type="password" name="password" id="password" placeholder="<?php echo e(trans('form.placeholder_messsage', array("field" => trans('form.password')))); ?>" maxlength="45" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <input class="btn btn-lg btn-primary" type="submit" value="<?php echo e(trans('form.submit_connect')); ?>">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+        
+         <div class="row">
+         <div class="col-md-offset-3 col-md-7 col-sm-12 ">
+                   <h1 class="head-title text-center"><?php echo e(trans('messages.sign_in_citation')); ?></h1>
+              <a class="btn btn-lg btn-primary" href="<?php echo e(route('auth.register')); ?>"><?php echo e(trans('messages.sign_in_message')); ?><a/>
+         </div>
+
+        </div>
+    </section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('template.skeleton', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
