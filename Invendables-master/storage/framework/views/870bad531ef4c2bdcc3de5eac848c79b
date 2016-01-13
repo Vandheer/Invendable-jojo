@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>L'invendable | <?php echo $__env->yieldContent('title'); ?></title>
+        <meta name="description" content="<?php echo $__env->yieldContent('description'); ?>" />
+        <meta name="keywords" content="<?php echo $__env->yieldContent('keywords'); ?>" />
+        <?php echo Html::style('css/bootstrap.css'); ?>
+
+        <?php echo Html::style('css/style.css'); ?>
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <?php echo Html::style('img/favicon.png', array('rel' => 'shortcut icon', 'type' => 'image/x-icon')); ?>
+
+        <?php echo Html::style('img/favicon.png', array('rel' => 'apple-touch-icon', 'type' => 'image/x-icon')); ?>
+
+        
+    </head>
+    <body>
+        <?php echo $__env->make('template.partials.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php echo $__env->yieldContent('body'); ?>
+        <?php echo $__env->make('template.partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        <?php echo Html::script('js/jquery-1.11.3.min.js'); ?>
+
+        <?php echo Html::script('js/bootstrap.min.js'); ?>
+
+        <?php echo $__env->yieldContent('javascripts'); ?>
+    </body>
+</html>

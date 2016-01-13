@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'title_link_region' 	=> 'Petites annonces gratuites',
+    'home_button_ad' 		=> 'Passer une annonce gratuite',
+    'logo title'			=> 'Logo invendable',
+    'validation_message'    => 'Veuillez verifier votre annonce',
+    'logo_footer_title'		=> 'L\'invendable',
+    'footer_realisation' 	=> 'Réalisé dans le cadre d\'un projet universitaire ',
+    'footer_idea' 			=> 'Une idée de M. Lerouge',
+    'home_message'			=> 'La petite <span class="green-color">annonce</span> gratuite et <span class="green-color">écologique</span>  !',
+    'footer_copyright'		=> 'L\'invendable © 2015 - 2016 | Tous droits réservés | 58 avenue des pigéons',
+    'post_an_ad'			=> 'Passer une petite annonce gratuite',
+    'connect_message'       => 'Se connecter !',
+    'regiset_message'       => 'Se connecter !',
+    'ads_success'           => 'Nous avons bien reçu votre annonce !',
+    'sign_in_message'       => 'S\'inscrire',
+    'uses_condition'        => 'J\'accepte les Conditions Générales de Vente',
+    'sign_in_citation'      => 'Nouveau sur l\'invendable ?',
+    'login_failed'          => 'Mot de passe incorrect',
+    'register_success'      => 'Inscription réussi !',
+    'danger'				=> 'Attention !',
+    'image'                 => 'Image de l\'objet',
+    'welcome_message'        => 'Bienvenue,',
+    'map_france'            => 'Toute la France',
+];
